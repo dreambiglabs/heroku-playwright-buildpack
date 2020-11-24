@@ -117,7 +117,6 @@ EOF
 	
 	if [[ "$SUPPORTED_BROWSERS" == *"webkit"* ]]; then
 		cat << EOF >>$build_tmpdir/Aptfile
-qtcreator
 libsm6:i386
 libavcodec-extra57
 libavcodec57

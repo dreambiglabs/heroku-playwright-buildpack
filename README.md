@@ -15,7 +15,7 @@ heroku buildpacks:set playwright-community/heroku-playwright-buildpack -a my-app
 Or use the source code in this repository:
 
 ```txt
-heroku buildpacks:set https://github.com/mxschmitt/heroku-playwright-buildpack -a my-app
+heroku buildpacks:set dreambiglabs/heroku-playwright-buildpack -a app-name
 ```
 
 For a full example, see [here](https://github.com/mxschmitt/heroku-playwright-example) a usage with the Express library.

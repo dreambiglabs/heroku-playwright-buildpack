@@ -75,7 +75,6 @@ EOF
 	if [[ "$SUPPORTED_BROWSERS" == *"firefox"* ]]; then
 		cat << EOF >>$build_tmpdir/Aptfile
 # Firefox dependencies
-libgles2
 libdbus-glib-1-2
 libxt6
 libsm6
@@ -121,12 +120,16 @@ libsm6:i386
 libavcodec-extra57
 libavcodec57
 libavfilter-extra6
+libwebp6
+libgudev-1.0-0
 libavfilter6
 libavformat57
+libxslt1.1
 libavutil55
 libc6
 libglvnd0
 libglib2.0-0
+libevent-2.1-6
 libgstreamer1.0-0
 libwoff1
 libgtk-3-0
@@ -148,6 +151,7 @@ libhyphen0
 libxcomposite1
 libxdamage1
 libwayland-server0
+libgdk-pixbuf2.0-0
 libwayland-egl1
 libwayland-client0
 libatk1.0-0
@@ -178,7 +182,6 @@ libgtk-3-0
 libbrotli1
 libgl1
 libegl1
-libnotify4
 libopus0
 libharfbuzz-icu0
 libxt6
@@ -199,7 +202,6 @@ libatk1.0-0
 libxkbcommon0
 libepoxy0
 libatk-bridge2.0-0
-libvpx5
 libgles2
 libglib2.0-0
 libcairo-gobject2

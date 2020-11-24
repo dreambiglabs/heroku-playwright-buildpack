@@ -75,6 +75,7 @@ EOF
 	if [[ "$SUPPORTED_BROWSERS" == *"firefox"* ]]; then
 		cat << EOF >>$build_tmpdir/Aptfile
 # Firefox dependencies
+libgles2
 libdbus-glib-1-2
 libxt6
 libsm6
@@ -116,6 +117,15 @@ EOF
 	
 	if [[ "$SUPPORTED_BROWSERS" == *"webkit"* ]]; then
 		cat << EOF >>$build_tmpdir/Aptfile
+libavcodec-extra57
+libavcodec57
+libavfilter-extra6
+libavfilter6
+libavformat57
+libavutil55
+libc6
+libglvnd0
+libglib2.0-0
 libgstreamer1.0-0
 libwoff1
 libgtk-3-0
@@ -145,7 +155,6 @@ libepoxy0
 libatk-bridge2.0-0
 libvpx5
 libgles2
-libglib2.0-0
 libcairo-gobject2
 gstreamer1.0-libav
 EOF
